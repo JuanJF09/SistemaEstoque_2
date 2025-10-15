@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: #f2f2f2;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/24.0.1" fx:controller="estoque.controller.AlterarController">
+
+    <children>
+
+        <!-- ID -->
+        <Label layoutX="95.0" layoutY="147.0" style="-fx-font-size: 16px;" text="Digite o ID do Produto:" />
+        <TextField fx:id="txtId" layoutX="294.0" layoutY="147.0" prefWidth="120" />
+        <Button layoutX="460.0" layoutY="147.0" onAction="#buscarProduto" prefWidth="100" style="-fx-background-color: #1874CD; -fx-text-fill: white; -fx-background-radius: 8px;" text="Buscar" />
+
+        <!-- Nome -->
+        <Label layoutX="108.0" layoutY="201.0" style="-fx-font-size: 16px;" text="Nome:" />
+        <TextField fx:id="txtNome" layoutX="204.0" layoutY="201.0" prefWidth="300" />
+
+        <!-- Quantidade -->
+        <Label layoutX="104.0" layoutY="252.0" style="-fx-font-size: 16px;" text="Quantidade:" />
+        <TextField fx:id="txtQuantidade" layoutX="204.0" layoutY="252.0" prefWidth="120" />
+
+        <!-- Preço Custo -->
+        <Label layoutX="99.0" layoutY="308.0" style="-fx-font-size: 16px;" text="Preço Custo:" />
+        <TextField fx:id="txtPrecoCusto" layoutX="200.0" layoutY="308.0" prefWidth="120" />
+
+        <!-- Preço Venda -->
+        <Label layoutX="354.0" layoutY="308.0" style="-fx-font-size: 16px;" text="Preço Venda:" />
+        <TextField fx:id="txtPrecoVenda" layoutX="460.0" layoutY="308.0" prefWidth="120" />
+
+        <!-- Material -->
+        <Label layoutX="100.0" layoutY="360.0" style="-fx-font-size: 16px;" text="Material:" />
+        <TextField fx:id="txtMaterial" layoutX="200.0" layoutY="360.0" prefWidth="300" />
+
+        <!-- Categoria -->
+        <Label layoutX="95.0" layoutY="407.0" style="-fx-font-size: 16px;" text="Categoria:" />
+        <TextField fx:id="txtCategoria" layoutX="200.0" layoutY="407.0" prefWidth="300" />
+
+        <!-- Descrição -->
+        <Label layoutX="95.0" layoutY="457.0" style="-fx-font-size: 16px;" text="Descrição:" />
+        <TextField fx:id="txtDescricao" layoutX="203.0" layoutY="457.0" prefWidth="480" />
+
+        <!-- Botões -->
+        <Button layoutX="310.0" layoutY="518.0" onAction="#salvarAlteracoes" prefWidth="180" style="-fx-background-color: #1874CD; -fx-text-fill: white; -fx-background-radius: 8px;" text="Alterar" />
+
+        <Button layoutX="14.0" layoutY="80.0" onAction="#Voltar" prefHeight="32.0" prefWidth="93.0" style="-fx-background-color: #1874CD; -fx-text-fill: white; -fx-background-radius: 8px;" text="Voltar">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Pane prefHeight="69.0" prefWidth="800.0" style="-fx-background-color: #1874CD;">
+         <children>
+      
+              <!-- Título -->
+              <Label layoutX="297.0" layoutY="15.0" style="-fx-font-size: 28px; -fx-font-weight: bold;" text="Alterar Produto" textFill="WHITE" />
+         </children>
+      </Pane>
+
+    </children>
+
+</AnchorPane>

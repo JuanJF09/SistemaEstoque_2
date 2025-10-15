@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="237.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="80.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Deseja mesmo salvar" wrappingWidth="236.193359375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="66.0" layoutY="124.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="81.0" style="-fx-background-color: #1874CD; -fx-border-color: black;" text="Sim" textFill="WHITE" />
+      <Button layoutX="250.0" layoutY="124.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="81.0" style="-fx-border-color: black;" text="Não" />
+   </children>
+</AnchorPane>
